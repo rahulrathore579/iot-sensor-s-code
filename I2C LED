@@ -1,0 +1,26 @@
+#include<Adafruit_LiquidCrystal.h>
+
+Adafruit_LiquidCrystal lcd(0);
+
+void setup()
+{
+  lcd.begin(16,2);
+  lcd.setCursor(0,0);
+  lcd.setBacklight(1);
+  lcd.print("WELCOME");
+  delay(1000);
+  lcd.clear();
+}
+void loop()
+{
+  lcd.begin(16,2);
+  lcd.setCursor(6,0);
+  lcd.setBacklight(1);
+  lcd.print("HELLO");
+  delay(500);
+  lcd.setCursor(6,1);
+  lcd.setBacklight(1);
+  lcd.print("WORLD");
+  lcd.clear();
+
+}
